@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Developer or Not?",
+    "version": "1.0.0",
+    "description": "Displays developer concepts or quotes based on user preference.",
+    "icons": {
+        "128": "icon-128.png",
+        "48": "icon-48.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
